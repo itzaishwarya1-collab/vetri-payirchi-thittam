@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ComicCraft AI</title>
+
+    <!-- ComicCraft stylesheet -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="logo">
+                🎨 ComicCraft AI
+            </div>
+
+            <div class="tagline">
+                Turn your ideas into comics
+            </div>
+
+        </header>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main-container">
+
+            <!-- Hero section -->
+
+            <section class="hero">
+
+                <div class="hero-badge">
+                    ✨ AI Comic Story Creator
+                </div>
+
+                <h1>
+                    Create Your Own
+                    <span>AI Comic</span>
+                </h1>
+
+                <p>
+                    Turn your imagination into a complete comic story
+                    with characters, scenes, dialogue and illustrations.
+                </p>
+
+            </section>
+
+
+            <!-- ================= FORM ================= -->
+
+            <section class="card">
+
+                <form action="/generate" method="POST">
+
+                    <!-- Comic idea -->
+
+                    <div class="form-group">
+
+                        <label for="prompt">
+                            💡 Comic Idea
+                        </label>
+
+                        <textarea
+                            id="prompt"
+                            name="prompt"
+                            rows="5"
+                            placeholder="Example: A young girl discovers a mysterious magical notebook that brings her drawings to life..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Character -->
+
+                    <div class="form-group">
+
+                        <label for="character_name">
+                            👩 Main Character
+                        </label>
+
+                        <input
+                            type="text"
+                            id="character_name"
+                            name="character_name"
+                            value="Aishu"
+                            placeholder="Enter character name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Setting -->
+
+                    <div class="form-group">
+
+                        <label for="setting">
+                            🌆 Setting
+                        </label>
+
+                        <input
+                            type="text"
+                            id="setting"
+                            name="setting"
+                            value="A modern city"
+                            placeholder="Example: A magical forest"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Options -->
+
+                    <div class="form-row">
+
+                        <!-- Tone -->
+
+                        <div class="form-group">
+
+                            <label for="tone">
+                                🎭 Story Tone
+                            </label>
+
+                            <select
+                                id="tone"
+                                name="tone"
+                            >
+
+                                <option value="Funny">
+                                    Funny
+                                </option>
+
+                                <option value="Adventure">
+                                    Adventure
+                                </option>
+
+                                <option value="Fantasy">
+                                    Fantasy
+                                </option>
+
+                                <option value="Mystery">
+                                    Mystery
+                                </option>
+
+                                <option value="Emotional">
+                                    Emotional
+                                </option>
+
+                                <option value="Inspirational">
+                                    Inspirational
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- Art style -->
+
+                        <div class="form-group">
+
+                            <label for="art_style">
+                                🎨 Art Style
+                            </label>
+
+                            <select
+                                id="art_style"
+                                name="art_style"
+                            >
+
+                                <option value="Comic book">
+                                    Comic Book
+                                </option>
+
+                                <option value="Manga">
+                                    Manga
+                                </option>
+
+                                <option value="Cartoon">
+                                    Cartoon
+                                </option>
+
+                                <option value="Anime">
+                                    Anime
+                                </option>
+
+                                <option value="Watercolor">
+                                    Watercolor
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Generate button -->
+
+                    <button
+                        type="submit"
+                        class="generate-button"
+                    >
+
+                        <span>✨</span>
+
+                        Generate My Comic
+
+                        <span>→</span>
+
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <!-- ================= HOW IT WORKS ================= -->
+
+            <section class="how-section">
+
+                <div class="section-title">
+
+                    <h2>
+                        How It Works
+                    </h2>
+
+                    <p>
+                        Create your comic in three simple steps.
+                    </p>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <!-- Step 1 -->
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <div class="step-icon">
+                            💡
+                        </div>
+
+                        <h3>
+                            Enter Your Idea
+                        </h3>
+
+                        <p>
+                            Describe the story or adventure
+                            you want to create.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Step 2 -->
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <div class="step-icon">
+                            🤖
+                        </div>
+
+                        <h3>
+                            AI Creates Your Story
+                        </h3>
+
+                        <p>
+                            AI transforms your idea into scenes,
+                            narration and dialogue.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Step 3 -->
+
+                    <div class="step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <div class="step-icon">
+                            📖
+                        </div>
+
+                        <h3>
+                            Get Your Comic
+                        </h3>
+
+                        <p>
+                            View your comic panels and export
+                            your finished story as a PDF.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <div class="footer-logo">
+                🎨 ComicCraft AI
+            </div>
+
+            <p>
+                AI-powered storytelling and comic creation
+            </p>
+
+            <p class="copyright">
+                © 2026 ComicCraft AI
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

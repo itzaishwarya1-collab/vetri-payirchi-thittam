@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Error - ComicCraft AI</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='css/style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="page">
+
+        <header class="header">
+
+            <div class="logo">
+                🎨 ComicCraft AI
+            </div>
+
+            <a
+                href="/"
+                class="back-button"
+            >
+                ← Go Home
+            </a>
+
+        </header>
+
+
+        <main class="error-container">
+
+            <div class="error-card">
+
+                <div class="error-icon">
+                    ⚠️
+                </div>
+
+                <h1>
+                    Something Went Wrong
+                </h1>
+
+                <p>
+                    We couldn't generate your comic right now.
+                </p>
+
+                <div class="error-message">
+                    {{ error }}
+                </div>
+
+                <a
+                    href="/"
+                    class="generate-button"
+                >
+                    ✨ Try Again
+                </a>
+
+            </div>
+
+        </main>
+
+
+        <footer class="footer">
+
+            <p>
+                ComicCraft AI Comic Story Creator
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
